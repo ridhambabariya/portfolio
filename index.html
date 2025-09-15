@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <title>Portfolio • Riedham Pattel</title>
+    <meta name="description" content="Modern one-page portfolio of Riedham Pattel: developer, designer, and builder." />
+    <meta name="keywords" content="portfolio, web developer, designer, frontend, projects" />
+    <meta property="og:title" content="Portfolio • Riedham Pattel" />
+    <meta property="og:description" content="Modern one-page portfolio of Riedham Pattel with 3D and animations." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <!-- Optional social image: add resources/icon.png if desired -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio • Riedham Pattel" />
+    <meta name="twitter:description" content="Modern one-page portfolio of Riedham Pattel with 3D and animations." />
+    <!-- Optional twitter image: add resources/icon.png if desired -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='56' fill='%23111827'/%3E%3Cpath fill='%23ffffff' d='M64 192l64-128l64 128h-28l-12-24H104l-12 24H64zm68-56l-16-34l-16 34h32z'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrapper">
+        <a href="#top" class="brand" aria-label="Homepage">
+          <span class="brand-mark" aria-hidden="true">RP</span>
+          <span class="brand-text">Riedham Pattel</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+                <span class="sun" aria-hidden="true">☀</span>
+                <span class="moon" aria-hidden="true">🌙</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="scroll-progress" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="gradient"></div>
+          <div id="three-root" class="three-root" aria-hidden="true"></div>
+          <canvas id="orb-canvas" width="1920" height="1080" aria-hidden="true"></canvas>
+          <div class="grid" aria-hidden="true"></div>
+        </div>
+        <div class="container hero-inner reveal-up">
+          <div class="hero-content">
+            <h1 id="hero-title">Hi, I'm <span class="accent">Riedham Pattel</span></h1>
+            <p class="lead">Coding instructor and developer. I teach modern web technologies, craft high‑quality projects, and help students break into tech.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+            <ul class="hero-meta">
+              <li>Coding Instructor</li>
+              <li>Admission Counsellor</li>
+              <li>Content Creator</li>
+            </ul>
+          </div>
+          <div class="hero-visual tilt" data-tilt>
+            <div class="card3d">
+              <img src="assets/riedham.jpg" alt="Portrait of Riedham Pattel at work" />
+              <div class="card-glow"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to About">⌄</a>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container grid-2">
+          <div class="reveal-left">
+            <h2 id="about-title">About</h2>
+            <p>I’m a subject expert and coding instructor focused on practical, enjoyable learning. I simplify complex topics and mentor students to real outcomes.</p>
+            <p>Currently working as a Coding Instructor & Admission Counsellor (2023—Present). Previously ran events and social media initiatives (2022—Present).</p>
+            <div class="stats">
+              <div class="stat">
+                <span class="num" data-count="6">0</span>
+                <span class="label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="num" data-count="48">0</span>
+                <span class="label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="num" data-count="12">0</span>
+                <span class="label">Open Source</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <div class="about-card tilt" data-tilt>
+              <div class="avatar">
+                <img src="assets/riedham.jpg" alt="Riedham Pattel portrait" />
+                <span class="ring"></span>
+              </div>
+              <ul class="badges">
+                <li>Pedagogy</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title" class="reveal-up">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill reveal-up"><div class="skill-top"><span>Teaching & Mentorship</span><span class="skill-value">95%</span></div><div class="progress" data-value="95"><span></span></div></div>
+            <div class="skill reveal-up"><div class="skill-top"><span>JavaScript / Web</span><span class="skill-value">90%</span></div><div class="progress" data-value="90"><span></span></div></div>
+            <div class="skill reveal-up"><div class="skill-top"><span>Communication</span><span class="skill-value">92%</span></div><div class="progress" data-value="92"><span></span></div></div>
+            <div class="skill reveal-up"><div class="skill-top"><span>Content & Events</span><span class="skill-value">88%</span></div><div class="progress" data-value="88"><span></span></div></div>
+            <div class="skill reveal-up"><div class="skill-top"><span>Leadership</span><span class="skill-value">85%</span></div><div class="progress" data-value="85"><span></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="reveal-up">Projects</h2>
+          <div class="project-grid">
+            <article class="project-card tilt reveal-up" data-tilt>
+              <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop" alt="Project screenshot" />
+              <div class="project-body">
+                <h3>Interactive Dashboard</h3>
+                <p>Real-time analytics with elegant charts and filters.</p>
+                <div class="tags"><span>React</span><span>D3</span><span>WebSockets</span></div>
+                <div class="actions">
+                  <a class="btn small" href="#" aria-label="Open live demo">Live</a>
+                  <a class="btn small ghost" href="#" aria-label="Open source code">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card tilt reveal-up" data-tilt>
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Project screenshot" />
+              <div class="project-body">
+                <h3>Design System</h3>
+                <p>Composable UI kit with tokens, themes, and primitives.</p>
+                <div class="tags"><span>TypeScript</span><span>CSS</span><span>Storybook</span></div>
+                <div class="actions">
+                  <a class="btn small" href="#">Docs</a>
+                  <a class="btn small ghost" href="#">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card tilt reveal-up" data-tilt>
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Project screenshot" />
+              <div class="project-body">
+                <h3>AI Assistant</h3>
+                <p>Natural language interface for productivity workflows.</p>
+                <div class="tags"><span>Node</span><span>LLM</span><span>UX</span></div>
+                <div class="actions">
+                  <a class="btn small" href="#">Try</a>
+                  <a class="btn small ghost" href="#">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="container grid-2">
+          <div class="reveal-left">
+            <h2 id="contact-title">Contact</h2>
+            <p>Have an idea or a role in mind? I’m open to freelance and full-time opportunities. Let’s talk.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:riedhampattel@gmail.com">riedhampattel@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="reveal-right">
+            <form class="contact-form" action="#" method="post" novalidate>
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button class="btn primary" type="submit">Send Message</button>
+              <p class="form-note" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name — Built with love.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <!-- Optional local asset path: place your GLB at Website/assets/logo.glb -->
+  </body>
+  </html>
+
+
